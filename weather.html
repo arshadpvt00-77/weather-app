@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="wea.css">
+</head>
+
+<body>
+
+    
+    <header>
+
+        <h2>🌤️ Weather</h2>
+
+        <p id="location">Loading...</p>
+
+    </header>
+
+
+
+    <section class="search-section">
+
+        <input
+            type="text"
+            id="cityinput"
+            placeholder="Enter your city name"
+            autocomplete="off"
+        >
+
+        <button id="Searchbtn">🔍</button>
+
+    </section>
+
+
+    <main>
+
+        <section class="current-Weather">
+
+            <h2 id="WeatherCondition">Weather Condition</h2>
+
+            <p id="feelslike">Feels Like 26°C</p>
+
+            <h1 id="Temperature">24°C</h1>
+
+            <p id="high-or-low">H: 26° | L: 18°</p>
+
+            <div class="Weather-image">
+
+                <img src="" alt="Weather Icon">
+
+            </div>
+
+            <button id="favoriteBtn">
+                ⭐ Add to Favorites
+            </button>
+
+        </section>
+
+
+        
+        <section class="Weather-details">
+
+            <div>
+
+                <h3>💨 Wind</h3>
+
+                <p id="wind">6 km/h</p>
+
+            </div>
+
+
+            <div>
+
+                <h3>💧 Humidity</h3>
+
+                <p id="humidity">43%</p>
+
+            </div>
+
+
+            <div>
+
+                <h3>☀️ UV Index</h3>
+
+                <p id="uv">5</p>
+
+            </div>
+
+        </section>
+
+
+         <section class="hourly-forecast">
+
+            <h2>Hourly Forecast</h2>
+
+            <div id="hourlycontain">
+
+                <p>Loading forecast...</p>
+
+            </div>
+
+        </section>
+
+
+        <section class="sunrise-sunset">
+
+            <h2>🌅 Sunrise & Sunset</h2>
+
+            <p id="sunrise">Sunrise: 06:38 AM</p>
+
+            <p id="sunset">Sunset: 06:42 PM</p>
+
+        </section>
+
+
+        
+        <section class="favorites-section">
+
+            <h2>⭐ Favorite Cities</h2>
+
+            <div id="favoritesList"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <button id="todayBtn">Today</button>
+
+        <button id="hourlyBtn">Hourly</button>
+
+        <button id="savedBtn">Saved</button>
+
+    </footer>
+
+
+    <script src="wea.js"></script>
+
+</body>
+
+</html>
